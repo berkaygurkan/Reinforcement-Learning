@@ -47,23 +47,29 @@ class A2CAgent:
         
         return action.item(), log_prob, state_value
 
-    def update_policy(self, rollout):
+    def update_policy(self, rollout, use_gae=True):
         states, actions, rewards, log_probs, values, dones, next_value = rollout
-
-        advantages = torch.zeros_like(rewards).to(self.device)
-        last_advantage = 0
-        for t in reversed(range(len(rewards))):
-            # --- HATA DÜZELTMESİ BURADA ---
-            # 'dones' tensörünü, çıkarma işlemi yapmadan önce float'a çeviriyoruz.
-            mask = 1.0 - dones[t].float()
-            
-            delta = rewards[t] + self.gamma * next_value * mask - values[t]
-            last_advantage = delta + self.gamma * self.gae_lambda * last_advantage * mask
-            advantages[t] = last_advantage
-            next_value = values[t]
         
-        returns = advantages + values
-
+        advantages = torch.zeros_like(rewards).to(self.device)
+        
+        # --- GAE ve 1-Adımlık TD Avantaj Hesaplaması ---
+        if use_gae:
+            last_advantage = 0
+            for t in reversed(range(len(rewards))):
+                mask = 1.0 - dones[t].float() # Hata düzeltmesi: bool -> float
+                delta = rewards[t] + self.gamma * next_value * mask - values[t]
+                last_advantage = delta + self.gamma * self.gae_lambda * last_advantage * mask
+                advantages[t] = last_advantage
+                next_value = values[t]
+            returns = advantages + values
+        else: # Basit 1-adımlık avantaj (TD Hatası)
+            returns = torch.zeros_like(rewards).to(self.device)
+            for t in reversed(range(len(rewards))):
+                mask = 1.0 - dones[t].float()
+                returns[t] = rewards[t] + self.gamma * next_value * mask
+                next_value = values[t]
+            advantages = returns - values
+        
         policy_loss = -(advantages.detach() * log_probs).mean()
         value_loss = nn.MSELoss()(returns.squeeze(), values.squeeze())
         
