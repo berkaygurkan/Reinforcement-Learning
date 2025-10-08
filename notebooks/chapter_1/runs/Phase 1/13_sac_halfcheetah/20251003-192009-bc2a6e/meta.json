@@ -1,0 +1,14 @@
+{
+  "phase": "Phase 1",
+  "step": "SAC-HalfCheetah",
+  "notebook": "13_sac_halfcheetah",
+  "seed": 42,
+  "run_id": "20251003-192009-bc2a6e",
+  "root_dir": "runs/Phase 1/13_sac_halfcheetah/20251003-192009-bc2a6e",
+  "ckpt_dir": "runs/Phase 1/13_sac_halfcheetah/20251003-192009-bc2a6e/checkpoints",
+  "monitor_dir": "runs/Phase 1/13_sac_halfcheetah/20251003-192009-bc2a6e/monitor",
+  "candidates": [
+    "HalfCheetahBulletEnv-v0",
+    "HalfCheetah-v5"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "phase": "Phase 2",
+  "notebook": "20_forward_model_simple",
+  "step": "ForwardModel+RandomShooting",
+  "env": "Pendulum-v1",
+  "seed": 42,
+  "run_id": "20251007-221856-7ff6af",
+  "root_dir": "runs/Phase 2/20_forward_model_simple/20251007-221856-7ff6af",
+  "ckpt_dir": "runs/Phase 2/20_forward_model_simple/20251007-221856-7ff6af/checkpoints",
+  "monitor_dir": "runs/Phase 2/20_forward_model_simple/20251007-221856-7ff6af/monitor"
+}

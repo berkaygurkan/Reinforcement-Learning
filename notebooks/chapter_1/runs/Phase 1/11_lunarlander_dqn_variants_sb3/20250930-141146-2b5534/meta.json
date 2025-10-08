@@ -1,0 +1,17 @@
+{
+  "phase": "Phase 1",
+  "step": "1B",
+  "notebook": "11_lunarlander_dqn_variants_sb3",
+  "env_id": "LunarLander-v3",
+  "seed": 42,
+  "run_id": "2025-09-30 14:37:25",
+  "root_dir": "runs/Phase 1/11_lunarlander_dqn_variants_sb3/20250930-141146-2b5534",
+  "ckpt_dir": "runs/Phase 1/11_lunarlander_dqn_variants_sb3/20250930-141146-2b5534/checkpoints",
+  "tb_dir": "runs/Phase 1/11_lunarlander_dqn_variants_sb3/20250930-141146-2b5534/tb",
+  "monitor_dir": "runs/Phase 1/11_lunarlander_dqn_variants_sb3/20250930-141146-2b5534/monitor",
+  "variants": [
+    "double",
+    "double_dueling",
+    "double_dueling_per"
+  ]
+}

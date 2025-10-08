@@ -1,0 +1,13 @@
+{
+  "phase": "Phase 1",
+  "step": "TD3vsDDPG-Reacher",
+  "notebook": "14_td3_ddpg_reacher",
+  "env": "Reacher-v5",
+  "seed": 42,
+  "run_id": "20251003-162719-9e6ce0",
+  "root_dir": "runs/Phase 1/14_td3_ddpg_reacher/20251003-162719-9e6ce0",
+  "ckpt_dir": "runs/Phase 1/14_td3_ddpg_reacher/20251003-162719-9e6ce0/checkpoints",
+  "monitor_dir": "runs/Phase 1/14_td3_ddpg_reacher/20251003-162719-9e6ce0/monitor",
+  "td3_dir": "runs/Phase 1/14_td3_ddpg_reacher/20251003-162719-9e6ce0/TD3_Reacher_v5",
+  "ddpg_dir": "runs/Phase 1/14_td3_ddpg_reacher/20251003-162719-9e6ce0/DDPG_Reacher_v5"
+}
