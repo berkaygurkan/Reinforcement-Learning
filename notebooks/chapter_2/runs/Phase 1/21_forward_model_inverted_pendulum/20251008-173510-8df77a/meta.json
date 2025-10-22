@@ -1,0 +1,11 @@
+{
+  "phase": "Phase 1",
+  "notebook": "21_forward_model_inverted_pendulum",
+  "step": "ForwardModel+RS-MPC+NoisyPPO",
+  "env": "InvertedPendulum-v4",
+  "seed": 42,
+  "run_id": "20251008-173510-8df77a",
+  "root_dir": "runs/Phase 1/21_forward_model_inverted_pendulum/20251008-173510-8df77a",
+  "ckpt_dir": "runs/Phase 1/21_forward_model_inverted_pendulum/20251008-173510-8df77a/checkpoints",
+  "monitor_dir": "runs/Phase 1/21_forward_model_inverted_pendulum/20251008-173510-8df77a/monitor"
+}

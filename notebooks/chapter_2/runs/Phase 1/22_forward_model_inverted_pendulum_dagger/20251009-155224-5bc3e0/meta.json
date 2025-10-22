@@ -1,0 +1,11 @@
+{
+  "phase": "Phase 1",
+  "notebook": "22_forward_model_inverted_pendulum_dagger",
+  "step": "ForwardModel+MPC+DAgger",
+  "env": "InvertedPendulum-v4",
+  "seed": 42,
+  "run_id": "20251009-155224-5bc3e0",
+  "root_dir": "runs/Phase 1/22_forward_model_inverted_pendulum_dagger/20251009-155224-5bc3e0",
+  "ckpt_dir": "runs/Phase 1/22_forward_model_inverted_pendulum_dagger/20251009-155224-5bc3e0/checkpoints",
+  "monitor_dir": "runs/Phase 1/22_forward_model_inverted_pendulum_dagger/20251009-155224-5bc3e0/monitor"
+}

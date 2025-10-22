@@ -1,0 +1,16 @@
+{
+  "phase": "Phase 1",
+  "notebook": "21_forward_model_inverted_pendulum",
+  "step": "ForwardModel+RS-MPC+NoisyPPO",
+  "env": "InvertedPendulum-v4",
+  "seed": 42,
+  "root_dir": "runs/Phase 1/21_forward_model_inverted_pendulum/20251009-130558-a36ed6",
+  "run_id": "20251009-130558-a36ed6",
+  "fm_log": "runs/Phase 1/21_forward_model_inverted_pendulum/20251009-130558-a36ed6/ForwardModel_InvertedPendulum_v4",
+  "mpc_log": "runs/Phase 1/21_forward_model_inverted_pendulum/20251009-130558-a36ed6/MPC_RS_InvertedPendulum_v4",
+  "base_log": "runs/Phase 1/21_forward_model_inverted_pendulum/20251009-130558-a36ed6/Baseline_PPO_InvertedPendulum_v4",
+  "data_log": "runs/Phase 1/21_forward_model_inverted_pendulum/20251009-130558-a36ed6/DataGen_InvertedPendulum_v4",
+  "ckpt_fm": "runs/Phase 1/21_forward_model_inverted_pendulum/20251009-130558-a36ed6/checkpoints/ForwardModel_InvertedPendulum_v4",
+  "ckpt_mpc": "runs/Phase 1/21_forward_model_inverted_pendulum/20251009-130558-a36ed6/checkpoints/MPC_RS_InvertedPendulum_v4",
+  "ckpt_base": "runs/Phase 1/21_forward_model_inverted_pendulum/20251009-130558-a36ed6/checkpoints/Baseline_InvertedPendulum_v4"
+}

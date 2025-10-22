@@ -1,0 +1,11 @@
+{
+  "phase": "Phase 1",
+  "notebook": "21_ensemble_cem_halfcheetah",
+  "step": "Ensemble+CEM",
+  "env": "InvertedDoublePendulum-v4",
+  "seed": 42,
+  "run_id": "20251009-152346-2d5fa3",
+  "root_dir": "runs/Phase 1/21_ensemble_cem_halfcheetah/20251009-152346-2d5fa3",
+  "ckpt_dir": "runs/Phase 1/21_ensemble_cem_halfcheetah/20251009-152346-2d5fa3/checkpoints",
+  "monitor_dir": "runs/Phase 1/21_ensemble_cem_halfcheetah/20251009-152346-2d5fa3/monitor"
+}
