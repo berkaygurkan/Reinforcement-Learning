@@ -1,0 +1,24 @@
+{
+  "phase": "Phase 3",
+  "step": "3A-1D-Mass-RL2-SabitHedef",
+  "notebook": "30_meta_1d_mass_rl2",
+  "env": "1D-mass-only-m",
+  "seed": 42,
+  "run_id": "20251105-110838-db05a4",
+  "root_dir": "runs/Phase 3/30_meta_1d_mass_rl2/20251105-110838-db05a4",
+  "ckpt_dir": "runs/Phase 3/30_meta_1d_mass_rl2/20251105-110838-db05a4/checkpoints",
+  "monitor_dir": "runs/Phase 3/30_meta_1d_mass_rl2/20251105-110838-db05a4/monitor",
+  "tb_dir": "runs/Phase 3/30_meta_1d_mass_rl2/20251105-110838-db05a4/tb",
+  "rl2": {
+    "hidden_size": 64,
+    "meta_batch_size": 8,
+    "episodes_per_task": 4,
+    "rollout_len": 100,
+    "total_iters": 200,
+    "gamma": 0.99,
+    "lambda_gae": 0.95,
+    "ppo_epochs": 4,
+    "ppo_clip": 0.2,
+    "lr": 0.0003
+  }
+}
